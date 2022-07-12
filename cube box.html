@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: cadetblue;
+        }
+        .wrapper{
+            width: 200px;
+            height: 200px;
+            margin: 15% auto;
+
+
+        }
+        .box-area{
+            animation: animate 7s ease-in-out infinite;
+            transform-style: preserve-3d;
+            transform-origin: 100px 100px 0;
+
+        }
+        .box-area div{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+        }
+        .box-area .box1{
+            background: url(https://w0.peakpx.com/wallpaper/213/99/HD-wallpaper-natural-city-colorful-caotic-futuristic-lives-city-multicolor-anime-people-hi-tech-person-flowers-manga-tecno-trees-tree-water-nature-natural.jpg);
+            -webkit-background-size:cover;
+            background-size: cover;
+            background-position: center center;
+            transform: translateZ(100px);
+        }
+        .box-area .box2{
+            background: url(https://w0.peakpx.com/wallpaper/773/331/HD-wallpaper-anime-cityscape-future-city-future-landscape-cant-think-of-a-fourth-hi-tech-city.jpg);
+            -webkit-background-size:cover;
+            background-size: cover;
+            background-position: center center;
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        .box-area .box3{
+            background: url(https://i.pinimg.com/736x/05/d2/54/05d2547cf37f85849d4c19d0aafe4053.jpg);
+            -webkit-background-size:cover;
+            background-size: cover;
+            background-position: center center;
+            transform:rotateY(90deg) rotateX(90deg) translateZ(100px);
+        }
+        .box-area .box4{
+            background: url(https://c4.wallpaperflare.com/wallpaper/811/178/380/sci-fi-steampunk-bridge-city-wallpaper-preview.jpg);
+            -webkit-background-size:cover;
+            background-size: cover;
+            background-position: center center;
+            transform:rotateY(180deg) rotateZ(90deg) translateZ(100px);
+        }
+        .box-area .box5{
+            background: url(https://external-preview.redd.it/Z02SU6FGmAbmYsjtX4cF6XPdR5fSGnyCsrhlv7V5Vhw.jpg?auto=webp&s=4ec346ea4dba24cefa1993fb1defaf96abbe80e9);
+            -webkit-background-size:cover;
+            background-size: cover;
+            background-position: center center;
+            transform:rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+        }
+        .box-area .box6{
+            background: url(https://www.desktopbackground.org/download/1600x1200/2012/09/22/456787_steampunk-city-wallpapers-fantasy-wallpapers_1920x1200_h.jpg);
+            -webkit-background-size:cover;
+            background-size: cover;
+            background-position: center center;
+            transform:rotateX(-90deg) translateZ(100px);
+        }
+        @keyframes animate{
+            from,to{
+                transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+            }
+            16%{
+                transform: rotateY(-90deg);
+            }
+            33%{
+                transform: rotateY(-90deg) rotateZ(90deg);
+            }
+            50%{
+                transform: rotateY(-180deg) rotateZ(90deg);
+            }
+            66%{ 
+                transform: rotateY(-270deg) rotateX(90deg);
+           }
+            83%{
+                transform: rotatex(90deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box-area">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+            <div class="box4"></div>
+            <div class="box5"></div>
+            <div class="box6"></div>
+        </div>
+    </div>
+</body>
+</html>
